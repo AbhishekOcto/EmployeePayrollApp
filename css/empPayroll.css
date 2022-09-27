@@ -112,3 +112,13 @@ label{
     border-radius: 50%;
     margin-left: 12px;
 }
+
+.gender-radio-content{
+    display: flex;
+    flex-direction: row;
+}
+.department-checkbox-content{
+    display: flex;
+    flex-direction: row;
+
+}
