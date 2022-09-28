@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Payroll System UI</title>
     <link rel="stylesheet" href="../css/empPayroll.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -148,19 +149,13 @@
             <div class="buttonParent">
                 <a href="../pages/empPayroll.html" class="resetButton button CancelButton">Cancel</a>
                 <div class="submit-reset">
-                    <button type="submit" class="button submitBtton" id="submitButton">Submit</button>
+                    <button type="submit" class="submitButton button" id="submitButton">Submit</button>
                     <button type="reset" class="resetButton button">Reset</button>
                 </div>
             </div>
+            <script src="../js/EmpPay.js"></script>
         </form>
     </div>
-    <script>
-        let salarySelector = document.querySelector('#salary');
-        salarySelector.addEventListener("change", function()
-        {
-            let rangeValue = document.getElementById('salary');
-            document.getElementById('salary_output').value = rangeValue.value;
-        });
-    </script> 
+    
 </body>
 </html>
