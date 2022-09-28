@@ -76,8 +76,8 @@
                 <label class="label text" for="salary">Choose your salary:</label>
                 <input class="input" type="range" name="salary" id="salary" min="300000"
                 max="500000" step="100" value="400000">
-                <output class="salary-output text" for="salary">400000</output>
-            </div>   
+                <output class="salary-output text" id="salary_output" for="salary">400000</output>
+            </div> <br>  
             <!-- UC5 -->
             <div class="row-content">
                 <label class="label text" for="startDate">Start Date</label>
@@ -137,8 +137,30 @@
                 <option value="2017">2017</option>
                 <option value="2016">2016</option>
             </select> 
-            </div>  
+            </div>
+            </div>
+            <!-- UC-6 -->
+            <div class="row-content">
+                <label class="label text" for="notes">Notes</label>
+                <textarea id="notes" class="input" name="Notes" placeholder="" style="height:100px"></textarea>
+            </div>
+
+            <div class="buttonParent">
+                <a href="../pages/empPayroll.html" class="resetButton button CancelButton">Cancel</a>
+                <div class="submit-reset">
+                    <button type="submit" class="button submitBtton" id="submitButton">Submit</button>
+                    <button type="reset" class="resetButton button">Reset</button>
+                </div>
+            </div>
         </form>
-    </div> 
+    </div>
+    <script>
+        let salarySelector = document.querySelector('#salary');
+        salarySelector.addEventListener("change", function()
+        {
+            let rangeValue = document.getElementById('salary');
+            document.getElementById('salary_output').value = rangeValue.value;
+        });
+    </script> 
 </body>
 </html>
