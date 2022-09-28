@@ -1,3 +1,4 @@
+    
     let salarySelector = document.querySelector('#salary');
         salarySelector.addEventListener("change", function()
         {
